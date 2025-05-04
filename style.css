@@ -1,0 +1,167 @@
+/* Your existing CSS remains unchanged */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: rgba(255, 159, 67, 0.95);
+    position: relative;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+}
+
+.parent img {
+    margin: 15px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.parent img:hover {
+    transform: scale(1.02);
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.parent1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.playground {
+    display: flex;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+/* .playground img {
+    width: 80px;
+    height: auto;
+} */
+
+#result {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #2c3e50;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stat {
+    position: absolute;
+    font-size: 16px;
+    top: 20px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5a6978;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.stat p {
+    margin: 5px 0;
+    line-height: 1;
+}
+
+
+@media screen and (max-width:768px){
+    .stat{
+        font-size: 16px;
+        top: 20px;
+        left: 10px;
+    }
+    .parent{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .parent img{
+        width: 80px;
+    }
+    .label{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:510px){
+    .parent{
+        padding: 1px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .parent img{
+        width: 70px;
+    }
+    .label{
+        font-size: 20px;
+        font-weight: 250;
+    }
+    .playground {
+        gap: 30px;
+    }
+}
+@media screen and (max-width:390px){
+    .parent{
+        padding: 1px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .parent img{
+        width: 50px;
+    }
+    .label{
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .stat{
+        font-size: 20px;
+        top: 20px;
+        left: 10px;
+    }
+
+
+
+}
+@media screen and (max-width:150px){
+.parent{
+    flex-wrap: wrap; 
+top: 50px;
+}
+
+}
